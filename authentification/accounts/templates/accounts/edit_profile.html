@@ -1,0 +1,8 @@
+<h2>Modifier votre profil</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enregistrer</button>
+</form>
+<a href="{% url 'edit_profile' %}">Modifier mes informations</a>

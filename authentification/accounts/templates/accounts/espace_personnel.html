@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espace Personnel</title>
+</head>
+<body>
+ <h1>Bienvenue {{ user.username }}</h1>
+
+<p>Prénom : {{ profile.prenom }}</p>
+<p>Nom : {{ user.last_name }}</p>  <!-- ou {{ user.first_name }} si tu veux -->
+<p>Email : {{ profile.adresse_mail }}</p>
+<p>Numéro de téléphone : {{ profile.numero }}</p>
+<p>Date de naissance : {{ profile.date_naissance }}</p>
+
+
+</body>
+</html>
